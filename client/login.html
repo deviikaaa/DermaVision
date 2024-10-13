@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI DermaVision - Login</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 5% auto;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .login-container h2 {
+      color: #ff4c4c;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container p {
+      color: #ccc;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-control {
+      background-color: #2a2a2a;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .form-control:focus {
+      background-color: #2a2a2a;
+      box-shadow: none;
+      border: 1px solid #ff4c4c;
+    }
+
+    .btn-custom {
+      background-color: #ff4c4c;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .btn-custom:hover {
+      background-color: #e64444;
+    }
+
+    .text-small {
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .text-small a {
+      color: #ff4c4c;
+      text-decoration: none;
+    }
+
+    .text-small a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Welcome Back!</h2>
+    <p>Log in to continue exploring your skin health.</p>
+    
+    <form>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      
+      <button type="button" class="btn btn-custom" onclick="window.location.href='diagnosis.html';">Log In</button>
+    </form>
+    
+    <p class="text-small mt-3">Don't have an account? <a href="signup.html">Sign up here</a></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

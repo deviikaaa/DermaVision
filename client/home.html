@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI DermaVision - Welcome</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff4c4c;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 40px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .btn-custom {
+      background-color: #ff4c4c;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      margin: 10px;
+      width: 150px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background-color: #e64444;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 76, 76, 0.6);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .button-container {
+      animation: fadeIn 4s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Welcome to AI DermaVision</h1>
+    <p>Your AI-powered skincare assistant</p>
+    <div class="button-container">
+      <a href="login.html" class="btn btn-custom">Login</a>
+      <a href="signup.html" class="btn btn-custom">Sign Up</a>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI DermaVision - Photo Upload</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .upload-container {
+      width: 100%;
+      max-width: 600px;
+      height: 70%;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff4c4c;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .instruction-text {
+      color: #ccc;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .upload-area {
+      border: 2px dashed #ff4c4c;
+      width: 80%;
+      height: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    .upload-area:hover {
+      background-color: #2a2a2a;
+    }
+
+    .upload-text {
+      color: #ccc;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .btn-diagnose {
+      background-color: #ff4c4c;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-diagnose:hover {
+      background-color: #e64444;
+      transform: scale(1.05);
+    }
+
+    .remedy-container {
+      display: none;
+      margin-top: 20px;
+      text-align: center;
+      width: 80%;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .remedy-container h4 {
+      color: #ff4c4c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="upload-container">
+    <h1>AI DermaVision</h1>
+    <p class="instruction-text">Please drag and drop a picture of your hyperpigmentation to receive a personalized natural remedy.</p>
+    
+    <div class="upload-area">
+      <div class="upload-text">
+        <p>Drag & Drop your photo here or click to upload</p>
+      </div>
+    </div>
+    
+    <button type="button" class="btn btn-diagnose" onclick="showRemedies()">Diagnose</button>
+
+    <div class="remedy-container" id="remedyContainer">
+      <h4>Here is your tailored remedy based on your blood type, skin type, and allergies:</h4>
+      <p>// remedy //</p>
+    </div>
+  </div>
+
+  <script>
+    function showRemedies() {
+      document.getElementById('remedyContainer').style.display = 'block';
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
